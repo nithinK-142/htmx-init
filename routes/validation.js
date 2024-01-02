@@ -26,7 +26,7 @@ router.post("/email", (req, res) => {
         >
         <input
           name="email"
-          hx-post="/contact/email"
+          hx-post="/validate/email"
           class="border rounded-lg py-2 px-3 w-full focus:outline-none focus:border-blue-500"
           type="email"
           id="email"
@@ -46,7 +46,7 @@ router.post("/email", (req, res) => {
         >
         <input
           name="email"
-          hx-post="/contact/email"
+          hx-post="/validate/email"
           class="border rounded-lg py-2 px-3 w-full focus:outline-none focus:border-blue-500"
           type="email"
           id="email"

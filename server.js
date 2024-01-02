@@ -19,7 +19,7 @@ app.use("/users", usersRouter);
 app.use("/temperature", temperatureRouter);
 app.use("/get-weather", pollRouter);
 app.use("/search", searchRouter);
-app.use("/contact", validationRouter);
+app.use("/validate", validationRouter);
 
 // Start the server
 app.listen(3000, () => {
