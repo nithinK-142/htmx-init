@@ -22,7 +22,7 @@ router.get("/users", async (req, res) => {
         ${users.map((user) => `<li>${user.name}</li>`).join("")}
       </ul>
     `);
-  }, 1500);
+  }, 1000);
 });
 
 export default router;

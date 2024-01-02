@@ -1,5 +1,6 @@
 import express from "express";
 import usersRouter from "./routes/users.js";
+import testRouter from "./routes/test.js";
 
 const app = express();
 
@@ -11,6 +12,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 app.use("/", usersRouter);
+app.use("/", testRouter);
 
 // Start the server
 app.listen(3000, () => {
