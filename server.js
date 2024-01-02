@@ -1,6 +1,7 @@
 import express from "express";
 import usersRouter from "./routes/users.js";
 import temperatureRouter from "./routes/temperature.js";
+import pollRouter from "./routes/polling.js";
 
 const app = express();
 
@@ -14,6 +15,7 @@ app.use(express.json());
 // routes
 app.use("/users", usersRouter);
 app.use("/temperature", temperatureRouter);
+app.use("/get-weather", pollRouter);
 
 // Start the server
 app.listen(3000, () => {

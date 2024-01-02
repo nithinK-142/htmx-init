@@ -1,6 +1,8 @@
 import express from "express";
 
+//users
 const router = express.Router();
+
 router.get("/", async (req, res) => {
   // const users = [
   //   { id: 1, name: 'John Doe' },
