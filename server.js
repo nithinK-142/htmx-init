@@ -3,6 +3,7 @@ import usersRouter from "./routes/users.js";
 import temperatureRouter from "./routes/temperature.js";
 import pollRouter from "./routes/polling.js";
 import searchRouter from "./routes/search.js";
+import validationRouter from "./routes/validation.js";
 
 const app = express();
 
@@ -18,6 +19,7 @@ app.use("/users", usersRouter);
 app.use("/temperature", temperatureRouter);
 app.use("/get-weather", pollRouter);
 app.use("/search", searchRouter);
+app.use("/contact", validationRouter);
 
 // Start the server
 app.listen(3000, () => {
