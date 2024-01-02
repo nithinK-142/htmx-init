@@ -4,6 +4,7 @@ import temperatureRouter from "./routes/temperature.js";
 import pollRouter from "./routes/polling.js";
 import searchRouter from "./routes/search.js";
 import validationRouter from "./routes/validation.js";
+import profileRouter from "./routes/profile.js";
 
 const app = express();
 
@@ -20,6 +21,7 @@ app.use("/temperature", temperatureRouter);
 app.use("/get-weather", pollRouter);
 app.use("/search", searchRouter);
 app.use("/validate", validationRouter);
+app.use("/profile", profileRouter);
 
 // Start the server
 app.listen(3000, () => {
