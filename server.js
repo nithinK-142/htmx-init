@@ -1,6 +1,6 @@
 import express from "express";
 import usersRouter from "./routes/users.js";
-import testRouter from "./routes/test.js";
+import temperatureRouter from "./routes/temperature.js";
 
 const app = express();
 
@@ -11,8 +11,9 @@ app.use(express.urlencoded({ extended: true }));
 // Parse JSON bodies (as sent by API clients)
 app.use(express.json());
 
-app.use("/", usersRouter);
-app.use("/", testRouter);
+// routes
+app.use("/users", usersRouter);
+app.use("/temperature", temperatureRouter);
 
 // Start the server
 app.listen(3000, () => {
